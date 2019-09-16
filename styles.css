@@ -2,8 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 header {
-    /* padding: 25px 0; */
+
     position: relative;
     background: grey;
     width: 100%;
@@ -14,6 +20,32 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+
+header .fa {
+    color: white;
+    z-index: 5;
+    font-size: 3rem;
+
+}
+
+header .hamburger-menu {
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    width: 100%;
+    top: 60px;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+}
+
+header .hamburger-menu a {
+    color: white;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
 header #logo {
@@ -38,7 +70,7 @@ header #logo span {
     font-family: 'Open Sans', sans-serif;
 }
 
-header #menu {
+header #menu-links {
     margin-top: 25px;
     display: flex;
     align-items: center;
@@ -51,7 +83,7 @@ header #menu {
 
 }
 
-header nav#menu a {
+header nav#menu-links a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
@@ -60,7 +92,7 @@ header nav#menu a {
     letter-spacing: 3px;
 }
 
-header nav#menu a:hover {
+header nav#menu-links a:hover {
 
     text-decoration: underline;
 }
@@ -82,7 +114,7 @@ header #top-jumbo {
     color: white;
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 37%;
 }
 
 header #top-jumbo .welcome {
@@ -137,6 +169,10 @@ header #top-jumbo .ready-to-be-opened {
     letter-spacing: 2px;
     margin-top: 10px;
     font-family: 'open sans', sans-serif;
+}
+
+#about {
+    height: 450px;
 }
 
 
@@ -275,7 +311,6 @@ header #top-jumbo .ready-to-be-opened {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 25px;
     margin: 80px 0;
-    width: 100%;
 
 }
 
@@ -393,7 +428,6 @@ header #top-jumbo .ready-to-be-opened {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     margin: 80px 70px;
-    width: 100%;
 
 }
 
@@ -524,7 +558,7 @@ header #top-jumbo .ready-to-be-opened {
 }
 
 #info .circle .top a {
-
+    color: black;
     text-decoration: none;
 }
 
@@ -592,6 +626,8 @@ footer {
     font-family: 'Open sans', sans-serif;
     padding: 20px 0;
     font-size: .8rem;
+    width: 100%;
+    position: relative;
 }
 
 footer .container {
@@ -604,4 +640,172 @@ footer .container {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width : 768px) {
+
+    header #top-jumbo {
+        top: 37%;
+        left: 18%;
+    }
+
+    header #menu-links {
+        display: none;
+    }
+
+    header .fa {
+        position: relative;
+        top: 16px;
+        left: 63px;
+    }
+
+    header #logo span {
+        display: none;
+    }
+
+    #about .info {
+        width: 100%;
+        margin: 50px auto
+    }
+
+    #about .info span.discover {
+        font-size: 4rem;
+    }
+
+    #about .info h3 {
+        font-size: 1.6rem;
+    }
+
+    #about .info .description p {
+        font-size: .9rem;
+    }
+
+    #about .info .about-us span {
+        font-size: 1rem;
+    }
+
+    #about .img {
+        display: none;
+    }
+
+    #recipes .info h3 {
+        font-size: 4.5rem;
+    }
+
+    #recipes .info h4 {
+        font-size: 1.6rem;
+    }
+
+    #menu {
+        height: 450px;
+    }
+
+    #menu .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    #menu .right-info {
+        margin: 50px auto;
+    }
+
+    #menu .right-info .discover {
+        font-size: 3.6rem;
+    }
+
+    #menu .right-info h3 {
+        font-size: 1.8rem;
+    }
+
+    #menu .right-info p {
+        font-size: .8rem;
+    }
+
+    #menu .right-info .view-menu {
+        font-size: 1rem;
+    }
+
+    #menu .pictures {
+        display: none;
+    }
+
+    #the-perfect-blend span {
+        font-size: 4rem;
+    }
+
+    #the-perfect-blend h3 {
+        font-size: 1.6rem;
+    }
+
+    #culinary-delight {
+        text-align: center;
+        height: 450px;
+    }
+
+    #culinary-delight .left-info {
+        margin: 50px auto;
+    }
+
+    #culinary-delight .left-info p {
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    #culinary-delight .left-info .culinary {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    #culinary-delight .left-info h3 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    #culinary-delight .left-info .view-menu {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #culinary-delight .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    #culinary-delight .pictures img {
+        display: none;
+    }
+
+    #info .locations {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #info {
+        height: auto;
+    }
+
+    #info .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    #info .opening-hours {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
 }
