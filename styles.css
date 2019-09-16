@@ -16,6 +16,35 @@ header {
 
 }
 
+<<<<<<< HEAD
+=======
+header .fa {
+    color: white;
+    z-index: 5;
+    font-size: 3rem;
+
+}
+
+header .hamburger-menu {
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+    width: 100%;
+    top: 60px;
+    text-align: center;
+    font-family: 'Open sans', sans-serif;
+}
+
+header .hamburger-menu a {
+    color: white;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+>>>>>>> parent of 9b3b5c6... Made the mainpage mobile friendly
 header #logo {
     display: flex;
     z-index: 2;
@@ -604,4 +633,175 @@ footer .container {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+<<<<<<< HEAD
+=======
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width : 768px) {
+
+    header #top-jumbo {
+        top: 37%;
+        left: 18%;
+    }
+
+    header #menu-links {
+        display: none;
+    }
+
+    header .fa {
+        position: relative;
+        top: 16px;
+        left: 63px;
+    }
+
+    header #logo span {
+        display: none;
+    }
+
+    #about .info {
+        width: 100%;
+        margin: 50px auto
+    }
+
+    #about .info span.discover {
+        font-size: 4rem;
+    }
+
+    #about .info h3 {
+        font-size: 1.6rem;
+    }
+
+    #about .info .description p {
+        font-size: .9rem;
+    }
+
+    #about .info .about-us span {
+        font-size: 1rem;
+    }
+
+    #about .img {
+        display: none;
+    }
+
+    #recipes .info h3 {
+        font-size: 4.5rem;
+    }
+
+    #recipes .info h4 {
+        font-size: 1.6rem;
+    }
+
+    #menu {
+        height: 450px;
+    }
+
+    #menu .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    #menu .right-info {
+        margin: 50px auto;
+    }
+
+    #menu .right-info .discover {
+        font-size: 3.6rem;
+    }
+
+    #menu .right-info h3 {
+        font-size: 1.8rem;
+    }
+
+    #menu .right-info p {
+        font-size: .8rem;
+    }
+
+    #menu .right-info .view-menu {
+        font-size: 1rem;
+    }
+
+    #menu .pictures {
+        display: none;
+    }
+
+    #the-perfect-blend span {
+        font-size: 4rem;
+    }
+
+    #the-perfect-blend h3 {
+        font-size: 1.6rem;
+    }
+
+    #culinary-delight {
+        text-align: center;
+        height: 450px;
+    }
+
+    #culinary-delight .left-info {
+        margin: 50px auto;
+    }
+
+    #culinary-delight .left-info p {
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    #culinary-delight .left-info .culinary {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    #culinary-delight .left-info h3 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    #culinary-delight .left-info .view-menu {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #culinary-delight .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    #culinary-delight .pictures img {
+        display: none;
+    }
+
+    #info .locations {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    #info {
+        height: auto;
+    }
+
+    #info .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    #info .opening-hours {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+>>>>>>> parent of 9b3b5c6... Made the mainpage mobile friendly
 }
