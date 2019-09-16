@@ -1,0 +1,20 @@
+{
+  "name": "restaurant-site",
+  "version": "1.0.0",
+  "description": "I'm creating a restaurant website to practice taking a design and implement it using HTML and CSS.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariusgrHiof/Restaurant-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariusgrHiof/Restaurant-Site/issues"
+  },
+  "homepage": "https://github.com/mariusgrHiof/Restaurant-Site#readme"
+}
