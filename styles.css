@@ -22,6 +22,10 @@ header {
 
 }
 
+header #hamburger-bar {
+    display: none;
+}
+
 header .fa {
     color: white;
     z-index: 5;
@@ -650,6 +654,10 @@ footer .container {
     header #top-jumbo {
         top: 37%;
         left: 18%;
+    }
+
+    header #hamburger-bar {
+        display: block;
     }
 
     header #menu-links {
