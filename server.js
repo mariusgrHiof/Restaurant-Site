@@ -8,11 +8,11 @@ const express = require('express'),
 const app = express();
 
 // Middleware
-app.use('/', serveStatic(path.join(__dirname, '/public')));
+app.use('/', serveStatic(path.join(__dirname, '/')));
 
 // Serve Index
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 // Port
