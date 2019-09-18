@@ -657,8 +657,32 @@ footer .container {
 @media only screen and (max-width : 768px) {
 
     header #top-jumbo {
-        top: 37%;
-        left: 7%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    header #top-jumbo .welcome {
+        font-size: 7rem;
+
+    }
+
+    header #top-jumbo h2.top-header {
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+    header #top-jumbo .left-line {
+        width: 100px;
+
+    }
+
+    header #top-jumbo .right-line {
+        width: 100px;
+
     }
 
     header #menu-links {
