@@ -324,6 +324,7 @@ header #top-jumbo .ready-to-be-opened {
 #menu .pictures img {
     width: 250px;
     height: 300px;
+    object-fit: cover;
 
 
 }
@@ -442,6 +443,7 @@ header #top-jumbo .ready-to-be-opened {
 #culinary-delight .pictures img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 #culinary-delight .left-info {
